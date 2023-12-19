@@ -119,6 +119,12 @@ function show_project(name){
       skills:["software design","php","laravel","sql","Apis","payment gateways integration"],
       images:["assets/img/oscar2.png","assets/img/oscar3.png","assets/img/oscar.jpg"]
     },
+    earabiclearning: {
+      name: "E-arabic learning",
+      description:"E-arabic learning for Arabic online live cources for non-Arabic speakers, Laravel project",
+      skills:["software design","php","laravel","sql","Apis","payment gateways integration"],
+      images:["assets/img/earabiclearning2.png","assets/img/earabiclearning3.png","assets/img/earabiclearning4.png","assets/img/earabiclearning5.png"]
+    },
     rased:{
       name:"Rased for Education notifications",
       description:"A site for managing schools notifications and communications with parents. Innovative solutions have been found to communicate through various sms and WhatsApp service providers\
