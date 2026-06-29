@@ -5,16 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Menna Magdy</title>
+  <title>Menna Magdy | Computer Engineer & Web Developer Portfolio</title>
   <meta content="Menna Magdy Web developer and Computer Engineer Portfolio" name="description">
-  <meta content="" name="keywords">
+  <meta content="web development, software engineer, backend engineer, laravel, php, portfolio" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -24,54 +21,71 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyPortfolio
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
   <!-- ======= Navbar ======= -->
-  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-    <div class="container py-2 py-md-5">
-      <div class="row align-items-start">
-        
-        
-      </div>
-
-    </div>
-  </div>
-
-  <nav class="navbar navbar-light custom-navbar">
-    <div class="container">
+  <nav class="navbar navbar-dark custom-navbar">
+    <div class="container d-flex justify-content-between align-items-center">
       <div>
-      <h2>Hey, I'm Menna Magdy</h2>
-      <p class="mb-0">Computer Engineer &amp; Web developer</p>
+        <h2 class="mb-0">Menna Magdy</h2>
+        <p class="mb-0">Computer Engineer &amp; Developer</p>
       </div>
       
-      <a target="_blank" href="mailto:mnna.magdy@gmail.com" class="text-start text-lg-end"  >
-        mnna.magdy@gmail.com
+      <a target="_blank" href="mailto:mnna.magdy@gmail.com" class="email-link d-none d-sm-inline-block">
+        <i class="bi bi-envelope me-2"></i>mnna.magdy@gmail.com
       </a>
-      <!-- <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
-        <span></span>
-      </a> -->
-      
     </div>
   </nav>
 
   <main id="main">
 
+    <!-- ======= Hero Section ======= -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8" data-aos="fade-right">
+            <span class="hero-subtitle">COMPUTER ENGINEER & WEB DEVELOPER</span>
+            <h1 class="hero-title">
+              I build robust, scalable <br>
+              <span class="text-gradient typewriter-cursor" id="typewriter-text">Web Applications</span>
+            </h1>
+            <p class="hero-desc">
+              Specialized in backend engineering, system architecture, and designing high-performance database schemas. Experienced in crafting modern web platforms using Laravel, Django, Vue.js, and multi-tenant systems.
+            </p>
+            
+            <div class="hero-badge-container">
+              <div class="hero-badge"><i class="bi bi-shield-check"></i> Clean Architecture</div>
+              <div class="hero-badge"><i class="bi bi-database"></i> DB Architecture</div>
+              <div class="hero-badge"><i class="bi bi-speedometer2"></i> Scalability-focused</div>
+            </div>
+
+            <div class="d-flex gap-3">
+              <a href="#portfolio-grid-section" class="btn-gradient">
+                <i class="bi bi-grid-fill"></i> View My Work
+              </a>
+              <a href="mailto:mnna.magdy@gmail.com" class="btn btn-outline-light rounded-pill px-4 py-2 d-inline-flex align-items-center gap-2">
+                <i class="bi bi-chat-dots"></i> Get in Touch
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Abstract Grid SVG decoration -->
+      <svg class="bg-grid-dec" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+        <path d="M0 10 H100 M0 20 H100 M0 30 H100 M0 40 H100 M0 50 H100 M0 60 H100 M0 70 H100 M0 80 H100 M0 90 H100" stroke-width="0.1" />
+        <path d="M10 0 V100 M20 0 V100 M30 0 V100 M40 0 V100 M50 0 V100 M60 0 V100 M70 0 V100 M80 0 V100 M90 0 V100" stroke-width="0.1" />
+      </svg>
+    </section>
+
     <!-- ======= Works Section ======= -->
-    <section class="section site-portfolio">
+    <section class="section site-portfolio" id="portfolio-grid-section">
       <div class="container">
         <div class="row mb-5 align-items-center">
-          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" >
-            <h3 class="h3 heading">MyPortfolio.</h3>
+          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+            <h3 class="h3 heading">Featured Projects</h3>
           </div>
           <div class="col-md-12 col-lg-6 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
             <div id="filters" class="filters">
@@ -83,222 +97,259 @@
             </div>
           </div>
         </div>
-        <div id="portfolio-grid" class="row no-gutter" >
+        
+        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
           <div class="item laravel col-sm-6 col-md-4 col-lg-4 mb-4">
             <a onclick="show_project('oscar')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Oscar for travels</h3>
                 <span>Laravel project</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/oscar.jpg">
+              <img class="img-fluid" src="assets/img/oscar.jpg" alt="Oscar travels">
             </a>
           </div>
           <div class="item laravel col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('earabiclearning')"  class="item-wrap fancybox">
+            <a onclick="show_project('earabiclearning')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>E-Arabic learning</h3>
                 <span>Laravel Project</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/earabiclearning1.png">
+              <img class="img-fluid" src="assets/img/earabiclearning1.png" alt="E-Arabic learning">
             </a>
           </div>
           <div class="item laravel col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('ethra')"  class="item-wrap fancybox">
+            <a onclick="show_project('ethra')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Ethra T</h3>
                 <span>Laravel Project</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/ethraa1.jpg">
+              <img class="img-fluid" src="assets/img/ethraa1.jpg" alt="Ethra T">
             </a>
           </div>
           
           <div class="item php col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('elasreya')"  class="item-wrap fancybox">
+            <a onclick="show_project('elasreya')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>El Asreya real estate</h3>
-                <span>Real estate company website</span>
+                <span>PHP Website</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/elasreya1.jpg">
+              <img class="img-fluid" src="assets/img/elasreya1.jpg" alt="El Asreya real estate">
             </a>
           </div>
           <div class="item laravel col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('rased')"  class="item-wrap fancybox">
+            <a onclick="show_project('rased')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Rased for education</h3>
                 <span>Laravel Project</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/rased1.png">
+              <img class="img-fluid" src="assets/img/rased1.png" alt="Rased for education">
             </a>
           </div>
           <div class="item laravel col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('visuecstock')"  class="item-wrap fancybox">
+            <a onclick="show_project('visuecstock')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>VisuecStock</h3>
                 <span>Laravel Project</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/visuecstock1.jpg">
+              <img class="img-fluid" src="assets/img/visuecstock1.jpg" alt="VisuecStock">
             </a>
           </div>
           <div class="item laravel col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('DarbPrint')"  class="item-wrap fancybox">
+            <a onclick="show_project('DarbPrint')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>DarbPrint</h3>
-                <span>Online store</span>
+                <span>Online Store</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/darb-print1.jpg">
+              <img class="img-fluid" src="assets/img/darb-print1.jpg" alt="DarbPrint">
             </a>
           </div>
           <div class="item php col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('moasasa')"  class="item-wrap fancybox">
+            <a onclick="show_project('moasasa')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>El Moasasa</h3>
-                <span>Education wesite</span>
+                <span>Education Website</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/moasasa1.png">
+              <img class="img-fluid" src="assets/img/moasasa1.png" alt="El Moasasa">
             </a>
           </div>
           <div class="item codigniter col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('m7lat')"  class="item-wrap fancybox">
+            <a onclick="show_project('m7lat')" class="item-wrap fancybox">
               <div class="work-info">
-                <h3>Mahelat MultiShops store</h3>
+                <h3>Mahelat MultiShops</h3>
                 <span>CodeIgniter</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/m7lat1.png">
+              <img class="img-fluid" src="assets/img/m7lat1.png" alt="Mahelat MultiShops">
             </a>
           </div>
           <div class="item Magento col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('oalalife')"  class="item-wrap fancybox">
+            <a onclick="show_project('oalalife')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Oala Life Store</h3>
-                <span>Magento store</span>
+                <span>Magento Store</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/oalalife1.png">
+              <img class="img-fluid" src="assets/img/oalalife1.png" alt="Oala Life Store">
             </a>
           </div>
           <div class="item php col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('farmkem')"  class="item-wrap fancybox">
+            <a onclick="show_project('farmkem')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Farm Kem Store</h3>
-                <span>Php store</span>
+                <span>PHP Store</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/farm-kem1.png">
+              <img class="img-fluid" src="assets/img/farm-kem1.png" alt="Farm Kem Store">
             </a>
           </div>
           <div class="item laravel col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('el7l')"  class="item-wrap fancybox">
+            <a onclick="show_project('el7l')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>el-7l Dating site</h3>
                 <span>Laravel Project</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/el7l1.png">
+              <img class="img-fluid" src="assets/img/el7l1.png" alt="el-7l Dating site">
             </a>
           </div>
           <div class="item php col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('aqarnet')"  class="item-wrap fancybox">
+            <a onclick="show_project('aqarnet')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Aqar.Net</h3>
-                <span>Real estate </span>
+                <span>Real Estate</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/aqarnet1.png">
+              <img class="img-fluid" src="assets/img/aqarnet1.png" alt="Aqar.Net">
             </a>
           </div>
           <div class="item laravel col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('basmetamal')"  class="item-wrap fancybox">
+            <a onclick="show_project('basmetamal')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Basmet Amal Blog</h3>
                 <span>Laravel Project</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/basmetamal1.png">
+              <img class="img-fluid" src="assets/img/basmetamal1.png" alt="Basmet Amal Blog">
             </a>
           </div>
           <div class="item laravel col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a onclick="show_project('elsaleh')"  class="item-wrap fancybox">
+            <a onclick="show_project('elsaleh')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>El-Saleh</h3>
                 <span>Laravel Project</span>
               </div>
-              <img class="img-fluid" style="width:350px; height:250px;"  src="assets/img/elsaleh1.png">
+              <img class="img-fluid" src="assets/img/elsaleh1.png" alt="El-Saleh">
             </a>
           </div>
         </div>
       </div>
-    </section><!-- End  Works Section -->
+    </section>
 
-    <!-- ======= Clients Section ======= -->
-    <section class="section">
+    <!-- ======= Skills Section ======= -->
+    <section class="section skills-section">
       <div class="container">
-        <div class="row justify-content-center text-center mb-4">
-          <div class="col-12">
-            <h3 class="h3 heading">My Scalls</h3>
-            <p>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Web Development</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Software Engineering</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">DataBase Architecture</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">PHP</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Python</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Laravel</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Django</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">CodeIgniter</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Joomla</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Magento</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">MySql</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">MongoDB</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Html5</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Css</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Javascript</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">JQuery</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Vue.Js</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Nuxt.js</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Git</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Github</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">GitLab</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">BigData</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Scalability</h2>
-              <h2 class="badge rounded-pill text-bg-dark fs-5 m-1">Jira</h2>
-              
-            </p>
-          </div>
-        </div>
+        <h3 class="h3 heading" data-aos="fade-up">Professional Skills</h3>
         
-      </div>
-    </section><!-- End Clients Section -->
+        <div class="skills-container" data-aos="fade-up" data-aos-delay="100">
+          
+          <!-- Category 1 -->
+          <div class="skills-category-card">
+            <h4><i class="bi bi-cpu"></i> Core &amp; Architecture</h4>
+            <div class="skills-list">
+              <span class="badge">Web Development</span>
+              <span class="badge">Software Engineering</span>
+              <span class="badge">DataBase Architecture</span>
+              <span class="badge">Scalability</span>
+              <span class="badge">BigData</span>
+            </div>
+          </div>
 
-    <!-- ======= Services Section ======= -->
+          <!-- Category 2 -->
+          <div class="skills-category-card">
+            <h4><i class="bi bi-code-slash"></i> Backend Technologies</h4>
+            <div class="skills-list">
+              <span class="badge">PHP</span>
+              <span class="badge">Python</span>
+              <span class="badge">Laravel</span>
+              <span class="badge">Django</span>
+              <span class="badge">CodeIgniter</span>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skills-category-card">
+            <h4><i class="bi bi-database"></i> Database &amp; Server</h4>
+            <div class="skills-list">
+              <span class="badge">MySQL</span>
+              <span class="badge">MongoDB</span>
+              <span class="badge">Apache</span>
+              <span class="badge">HTTP</span>
+              <span class="badge">Server Control</span>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="skills-category-card">
+            <h4><i class="bi bi-window"></i> Frontend Stack</h4>
+            <div class="skills-list">
+              <span class="badge">Html5</span>
+              <span class="badge">Css</span>
+              <span class="badge">Javascript</span>
+              <span class="badge">JQuery</span>
+              <span class="badge">Vue.Js</span>
+              <span class="badge">Nuxt.js</span>
+            </div>
+          </div>
+
+          <!-- Category 5 -->
+          <div class="skills-category-card">
+            <h4><i class="bi bi-tools"></i> Tools &amp; CMS</h4>
+            <div class="skills-list">
+              <span class="badge">Git</span>
+              <span class="badge">Github</span>
+              <span class="badge">GitLab</span>
+              <span class="badge">Jira</span>
+              <span class="badge">Magento</span>
+              <span class="badge">Joomla</span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Resume CTA Section ======= -->
     <section class="section services">
       <div class="container">
-        <div class="row justify-content-center text-center mb-4">
-          <div class="col-5">
-            <h3 class="h3 heading">My Resume</h3>
-            <p>Please don't hesitate to download my cv and contact me if you are looking for amazing work.</p>
-            <a target="_blank" href="assets/cv/menna-magdy---Arabic.docx" class="btn btn-dark">Download Resume</a>
+        <div class="resume-cta-card" data-aos="fade-up">
+          <h3>Ready to Collaborate?</h3>
+          <p>Please check out my CV and contact me if you are looking for outstanding engineering solutions or backend architecture development.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a target="_blank" href="assets/cv/menna-magdy---Arabic.docx" class="btn-gradient">
+              <i class="bi bi-file-earmark-arrow-down-fill"></i> Download Resume
+            </a>
+            <a href="mailto:mnna.magdy@gmail.com" class="btn btn-outline-light rounded-pill px-4 py-2 d-inline-flex align-items-center gap-2">
+              <i class="bi bi-chat-dots-fill"></i> Let's Talk
+            </a>
           </div>
         </div>
-        
       </div>
-    </section><!-- End Services Section -->
+    </section>
 
-  </main><!-- End #main -->
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer class="footer" role="contentinfo">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <p class="mb-1">&copy; Copyright MyPortfolio. All Rights Reserved</p>
-          
+      <div class="row align-items-center">
+        <div class="col-sm-6 text-center text-sm-start mb-3 mb-sm-0">
+          <p class="mb-0">&copy; Copyright Menna Magdy. All Rights Reserved</p>
         </div>
-        <div class="col-sm-6 social text-md-end">
-          
-          <a target="_blank" href="https://wa.me/00966543963364"><span class="bi bi-whatsapp"></span></a>
-          <a target="_blank" href="mailto:mnna.magdy@gmail.com"><span class="bi bi-envelope"></span></a>
-          <a target="_blank" href="https://github.com/Menna-magdy-m"><span class="bi bi-github"></span></a>
-          <a target="_blank" href="www.linkedin.com/in/menna-magdy-m1m"><span class="bi bi-linkedin"></span></a>
+        <div class="col-sm-6 social justify-content-center justify-content-sm-end">
+          <a target="_blank" href="https://wa.me/00966543963364"><i class="bi bi-whatsapp"></i></a>
+          <a target="_blank" href="mailto:mnna.magdy@gmail.com"><i class="bi bi-envelope"></i></a>
+          <a target="_blank" href="https://github.com/Menna-magdy-m"><i class="bi bi-github"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/menna-magdy-m1m"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
     </div>
   </footer>
-  <!-- Full screen modal -->
-  
+
+  <!-- Fullscreen Modal -->
   <div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
@@ -308,30 +359,27 @@
         </div>
         <div class="modal-body">
           <div class="row">
-            
-            
-            <div class="col-8" style="border-right: solid 1px #eee;">
-              <div id="carouselExample" class="carousel carousel-dark slide">
+            <div class="col-lg-8 pe-lg-4" style="border-right: solid 1px rgba(255,255,255,0.08);">
+              <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner" id="carousel-items">
-                  
+                  <!-- JS populated -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" style="text-shadow: #555;" aria-hidden="true"></span>
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-            
             </div>
-            <div class="col-4"  >
+            <div class="col-lg-4 ps-lg-4">
               <h2>Project Description</h2>
-              <div id="project_description"></div>
-              <h2 class=".text-primary">Skills</h2>
-              <div id="project_skills">
-                
+              <div id="project_description" class="mb-4"></div>
+              <h2>Tech Stack</h2>
+              <div id="project_skills" class="d-flex flex-wrap gap-1">
+                <!-- JS populated -->
               </div>
             </div>
           </div>
@@ -352,10 +400,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <script
-  src="https://code.jquery.com/jquery-3.7.0.min.js"
-  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

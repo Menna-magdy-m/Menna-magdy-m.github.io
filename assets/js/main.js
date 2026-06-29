@@ -45,9 +45,65 @@
    * burgerMenu
    */
   const burgerMenu = select('.burger')
-  on('click', '.burger', function(e) {
-    burgerMenu.classList.toggle('active');
-  })
+  if (burgerMenu) {
+    on('click', '.burger', function(e) {
+      burgerMenu.classList.toggle('active');
+    })
+  }
+
+  /**
+   * Back to top button
+   */
+  let backtotop = select('.back-to-top')
+  if (backtotop) {
+    const toggleBacktotop = () => {
+      if (window.scrollY > 100) {
+        backtotop.classList.add('active')
+      } else {
+        backtotop.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleBacktotop)
+    document.addEventListener('scroll', toggleBacktotop)
+  }
+
+  /**
+   * Typewriter animation for Hero section
+   */
+  const typewriterText = document.getElementById('typewriter-text');
+  if (typewriterText) {
+    const words = ["Web Applications", "Backend APIs", "Database Schemas", "Laravel Systems", "Scalable Architectures"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let delay = 150;
+
+    function type() {
+      const currentWord = words[wordIndex];
+      if (isDeleting) {
+        typewriterText.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+        delay = 60;
+      } else {
+        typewriterText.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+        delay = 120;
+      }
+
+      if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        delay = 2200; // Pause at end of word
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        delay = 400; // Pause before typing next word
+      }
+
+      setTimeout(type, delay);
+    }
+    
+    setTimeout(type, 1000);
+  }
 
   /**
    * Porfolio isotope and filter
@@ -82,20 +138,23 @@
   /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  let testimonialsSlider = select('.testimonials-slider');
+  if (testimonialsSlider) {
+    new Swiper('.testimonials-slider', {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    });
+  }
 
   /**
    * Animation on scroll
@@ -112,7 +171,7 @@
 })()
 
 function show_project(name){
-  all_projects ={  
+  const all_projects = {  
     oscar: {
       name: "Oscar travels",
       description:"Oscar for travels, Laravel project",
@@ -127,15 +186,13 @@ function show_project(name){
     },
     rased:{
       name:"Rased for Education notifications",
-      description:"A site for managing schools notifications and communications with parents. Innovative solutions have been found to communicate through various sms and WhatsApp service providers\
-      <br>The project was implemented on the Laravel framework.",
+      description:"A site for managing schools notifications and communications with parents. Innovative solutions have been found to communicate through various sms and WhatsApp service providers<br>The project was implemented on the Laravel framework.",
       skills:["software design","php","laravel","sql","Apis","gateways integration"],
       images:["assets/img/rased4.png","assets/img/rased2.png","assets/img/rased3.png"]
     },
     ethra: {
       name: "Ethra for courses",
-      description:"Participate in implementing and developing the project.\
-      Add ingTamara payment method to the website.",
+      description:"Participate in implementing and developing the project.<br>Added Tamara payment method to the website.",
       skills:["php","laravel","sql","Apis"],
       images:["assets/img/ethraa2.jpg"]
     },
@@ -147,8 +204,7 @@ function show_project(name){
     },
     visuecstock: {
       name: "VisuecStock",
-      description:"Developing VisuecStock site as a mediator between photographers or art makers and content makers, managing the process of buying and selling photos and videos between buyer and seller.\
-      The project was developed using Laravel platform, Vue.js.",
+      description:"Developing VisuecStock site as a mediator between photographers or art makers and content makers, managing the process of buying and selling photos and videos between buyer and seller.<br>The project was developed using Laravel platform, Vue.js.",
       skills:["MySQL", "Web Development", "PHP","API Integration", "Laravel","Vue.js", "Database Architecture","Apache", "HTTP", "Server"],
       images:["assets/img/visuecstock2.jpg","assets/img/visuecstock3.jpg","assets/img/visuecstock4.jpg","assets/img/visuecstock5.png"]
     },
@@ -190,17 +246,13 @@ function show_project(name){
     },
     el7l: {
       name: "el-7l Dating site",
-      description:"Developing and designing a dating solution website using Laravel Framework\
-      I designed the site from the ground up, with a control panel with multiple options to control all fields and options, from the interface to the terms of members’ subscription to controlling subscribers’ packages and managing accounts.\
-      Also it is easy to use.",
+      description:"Developing and designing a dating solution website using Laravel Framework<br>I designed the site from the ground up, with a control panel with multiple options to control all fields and options, from the interface to the terms of members’ subscription to controlling subscribers’ packages and managing accounts.<br>Also it is easy to use.",
       skills:["MySQL", "Web Development", "PHP","API Integration", "Laravel","Vue.js", "Database Architecture","Apache", "HTTP", "Server"],
       images:["assets/img/el7l3.png","assets/img/el7l4.png","assets/img/el7l6.png","assets/img/el7l2.png"]
     },
     basmetamal: {
       name: "Basmet Amal Blog site",
-      description:"Developing and designing a dating solution website using Laravel Framework\
-      I designed the site from the ground up, including a control panel with multiple options to control all fields and options, from the interface to the terms of members’ subscription to controlling subscribers’ packages and managing accounts.\
-      Also it is easy to use.",
+      description:"Developing and designing a blog website using Laravel Framework<br>I designed the site from the ground up, including a control panel with multiple options to control all fields and options, from the interface to control members, subscribers, and posts.<br>Also it is easy to use.",
       skills:["MySQL", "Web Development", "PHP","API Integration", "Laravel","Vue.js", "Database Architecture","Apache", "HTTP", "Server"],
       images:["assets/img/basmetamal2.png"]
     },
@@ -220,30 +272,26 @@ function show_project(name){
     $('#project_description').html(all_projects[name]['description'])
 
     // set skills
-
     $('#project_skills').html("");
     all_projects[name]['skills'].forEach(element => {
-     
       $('#project_skills').append('<h2 class="badge rounded-pill text-bg-info m-1">'+element+'</h2>');
     });
-    //set images
     
+    //set images
     $('#carousel-items').html("");
     all_projects[name]['images'].forEach(element => {
-      
-      $('#carousel-items').append('<div class="carousel-item"><img src="'+ element +'" class="d-block w-100" ></div>') 
+      $('#carousel-items').append('<div class="carousel-item"><img src="'+ element +'" class="d-block w-100" alt="'+ all_projects[name]['name'] +'"></div>') 
     });
     $('#carousel-items').find('.carousel-item').first().addClass("active");
 
     const myCarouselElement = document.querySelector('#carouselExample')
 
     const carousel = new bootstrap.Carousel(myCarouselElement, {
-      interval: 2000,
-      touch: false
+      interval: 2500,
+      touch: true
     })
 
     var myModal = new bootstrap.Modal(document.getElementById("exampleModalFullscreen"), {});
     myModal.show();
   }
-  
 }
