@@ -182,7 +182,7 @@ function show_project(name) {
       name: "Elaraby ERP system",
       description: "Developing Laravel components and packages at <a href='https://elaraby-erp.net' target='_blank'>elaraby-erp.net</a> adding new features and integrating it with zatca.gov.sa ",
       skills: ["software design", "laravel", "sql", "Apis", "zatca.gov.sa integration"],
-      images: ["assets/img/elaraby-erp3.png", "assets/img/elaraby-erp2.png", "assets/img/elaraby-erp3.png", "assets/img/elaraby-erp4.png"]
+      images: ["assets/img/elaraby-erp3.png", "assets/img/elaraby-erp2.png", "assets/img/elaraby-erp1.png",]
     },
     massbazzar: {
       name: "Mass bazzar",
