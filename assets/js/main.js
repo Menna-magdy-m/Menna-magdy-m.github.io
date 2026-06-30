@@ -180,8 +180,8 @@ function show_project(name) {
     },
     elaraby_erp: {
       name: "Elaraby ERP system",
-      description: "Developing Laravel components and packages at <a href='https://elaraby-erp.net' target='_blank'>elaraby-erp.net</a> adding new features and integrating it with zatca.gov.sa ",
-      skills: ["software design", "laravel", "sql", "Apis", "zatca.gov.sa integration"],
+      description: "Developing Laravel components and packages at <a href='https://elaraby-erp.net' target='_blank'>elaraby-erp.net SAAS project</a> adding new features and integrating it with zatca.gov.sa ",
+      skills: ["software design", "laravel", "SAAS", "Apis", "zatca.gov.sa integration"],
       images: ["assets/img/elaraby-erp3.png", "assets/img/elaraby-erp2.png", "assets/img/elaraby-erp1.png",]
     },
     massbazzar: {
