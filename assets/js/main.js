@@ -176,19 +176,19 @@ function show_project(name) {
       name: "E-arabic learning",
       description: "Developing frontend for <a href='https://earabiclearning.com' target='_blank'>earabiclearning.com</a> a platform for Arabic online live cources for non-Arabic speakers, Next.js project",
       skills: ["software design", "Next.js", "React.js", "Tailwind CSS", "Responsive Web Design"],
-      images: ["assets/img/earabiclearning-next1.png", "assets/img/earabiclearning-next.png", "assets/img/earabiclearning-next2.png"]
+      images: ["assets/img/earabiclearning_new.png", "assets/img/earabiclearning-next1.png", "assets/img/earabiclearning-next.png", "assets/img/earabiclearning-next2.png"]
     },
     elaraby_erp: {
       name: "Elaraby ERP system",
       description: "Developing Laravel components and packages at <a href='https://elaraby-erp.net' target='_blank'>elaraby-erp.net</a> adding new features and integrating it with zatca.gov.sa ",
       skills: ["software design", "laravel", "sql", "Apis", "zatca.gov.sa integration"],
-      images: ["assets/img/elaraby-erp2.png", "assets/img/elaraby-erp3.png", "assets/img/elaraby-erp4.png"]
+      images: ["assets/img/elaraby-erp3.png", "assets/img/elaraby-erp2.png", "assets/img/elaraby-erp3.png", "assets/img/elaraby-erp4.png"]
     },
     massbazzar: {
       name: "Mass bazzar",
       description: "Developing Laravel fullstack project for <a href='https://massbazzar.com' target='_blank'>massbazzar.com</a> one of the biggest B2B marketplaces in Germany",
       skills: ["software design", "laravel", "sql", "Apis", "payment gateways integration"],
-      images: ["assets/img/massbazzar2.png", "assets/img/massbazzar3.png"]
+      images: ["assets/img/massbazzar1.png", "assets/img/massbazzar2.png", "assets/img/massbazzar3.png"]
     },
     oscar: {
       name: "Oscar travels",
