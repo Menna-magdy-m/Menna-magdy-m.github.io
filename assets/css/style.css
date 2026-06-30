@@ -795,3 +795,130 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   visibility: visible;
   opacity: 1;
 }
+
+/*--------------------------------------------------------------
+# Image Zoom Overlay Feature
+--------------------------------------------------------------*/
+.carousel-item img {
+  cursor: zoom-in;
+}
+
+/* Zoom Overlay Backdrop */
+.zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 10, 19, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 1200; /* Higher than Bootstrap full-screen modal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Image Container */
+.zoom-img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Image Zoomed View */
+.zoom-img-container img {
+  max-width: 92%;
+  max-height: 92%;
+  object-fit: contain;
+  transition: transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-origin: center center;
+  cursor: zoom-in;
+  will-change: transform;
+}
+
+/* Cursor states for zoom */
+.zoom-img-container img.zoomed {
+  cursor: grab;
+}
+
+.zoom-img-container img.zoomed:active {
+  cursor: grabbing;
+}
+
+/* Close Zoom button */
+.zoom-close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 1220;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  color: #fff;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  font-size: 1.2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.zoom-close-btn:hover {
+  background: var(--accent-secondary);
+  border-color: transparent;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+  transform: scale(1.05) rotate(90deg);
+}
+
+/* Controls Toolbar */
+.zoom-controls-toolbar {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1220;
+  display: flex;
+  gap: 16px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  padding: 8px 24px;
+  border-radius: 40px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-md);
+}
+
+.zoom-control-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  font-size: 1.15rem;
+}
+
+.zoom-control-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
+.zoom-control-btn:active {
+  transform: scale(0.95);
+}

@@ -32,7 +32,7 @@
         <h2 class="mb-0">Menna Magdy</h2>
         <p class="mb-0">Computer Engineer &amp; Developer</p>
       </div>
-      
+
       <a target="_blank" href="mailto:mnna.magdy@gmail.com" class="email-link d-none d-sm-inline-block">
         <i class="bi bi-envelope me-2"></i>mnna.magdy@gmail.com
       </a>
@@ -52,9 +52,10 @@
               <span class="text-gradient typewriter-cursor" id="typewriter-text">Web Applications</span>
             </h1>
             <p class="hero-desc">
-              Specialized in backend engineering, system architecture, and designing high-performance database schemas. Experienced in crafting modern web platforms using Laravel, Django, Vue.js, and multi-tenant systems.
+              Specialized in backend engineering, system architecture, and designing high-performance database schemas.
+              Experienced in crafting modern web platforms using Laravel, Django, Vue.js, and multi-tenant systems.
             </p>
-            
+
             <div class="hero-badge-container">
               <div class="hero-badge"><i class="bi bi-shield-check"></i> Clean Architecture</div>
               <div class="hero-badge"><i class="bi bi-database"></i> DB Architecture</div>
@@ -65,18 +66,21 @@
               <a href="#portfolio-grid-section" class="btn-gradient">
                 <i class="bi bi-grid-fill"></i> View My Work
               </a>
-              <a href="mailto:mnna.magdy@gmail.com" class="btn btn-outline-light rounded-pill px-4 py-2 d-inline-flex align-items-center gap-2">
+              <a href="mailto:mnna.magdy@gmail.com"
+                class="btn btn-outline-light rounded-pill px-4 py-2 d-inline-flex align-items-center gap-2">
                 <i class="bi bi-chat-dots"></i> Get in Touch
               </a>
             </div>
           </div>
         </div>
       </div>
-      
+
       <!-- Abstract Grid SVG decoration -->
       <svg class="bg-grid-dec" viewBox="0 0 100 100" fill="none" stroke="currentColor">
-        <path d="M0 10 H100 M0 20 H100 M0 30 H100 M0 40 H100 M0 50 H100 M0 60 H100 M0 70 H100 M0 80 H100 M0 90 H100" stroke-width="0.1" />
-        <path d="M10 0 V100 M20 0 V100 M30 0 V100 M40 0 V100 M50 0 V100 M60 0 V100 M70 0 V100 M80 0 V100 M90 0 V100" stroke-width="0.1" />
+        <path d="M0 10 H100 M0 20 H100 M0 30 H100 M0 40 H100 M0 50 H100 M0 60 H100 M0 70 H100 M0 80 H100 M0 90 H100"
+          stroke-width="0.1" />
+        <path d="M10 0 V100 M20 0 V100 M30 0 V100 M40 0 V100 M50 0 V100 M60 0 V100 M70 0 V100 M80 0 V100 M90 0 V100"
+          stroke-width="0.1" />
       </svg>
     </section>
 
@@ -92,13 +96,41 @@
               <a href="#" data-filter="*" class="active">All</a>
               <a href="#" data-filter=".php">PHP</a>
               <a href="#" data-filter=".laravel">Laravel</a>
+              <a href="#" data-filter=".nextjs">Next.js</a>
               <a href="#" data-filter=".codigniter">Codeigniter</a>
               <a href="#" data-filter=".Magento">Magento</a>
             </div>
           </div>
         </div>
-        
+
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+          <div class="item php col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a onclick="show_project('earabiclearning_new')" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>E-Arabic learning</h3>
+                <span>Next.js Project</span>
+              </div>
+              <img class="img-fluid" src="assets/img/earabiclearning_new.png" alt="El Asreya real estate">
+            </a>
+          </div>
+          <div class="item laravel col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a onclick="show_project('elaraby_erp')" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Elaraby ERP system</h3>
+                <span>Laravel project</span>
+              </div>
+              <img class="img-fluid" src="assets/img/elaraby-erp3.png" alt="Elaraby erp">
+            </a>
+          </div>
+          <div class="item laravel col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a onclick="show_project('massbazzar')" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Mass bazzar</h3>
+                <span>Laravel project</span>
+              </div>
+              <img class="img-fluid" src="assets/img/massbazzar1.png" alt="Mass bazzar">
+            </a>
+          </div>
           <div class="item laravel col-sm-6 col-md-4 col-lg-4 mb-4">
             <a onclick="show_project('oscar')" class="item-wrap fancybox">
               <div class="work-info">
@@ -126,7 +158,7 @@
               <img class="img-fluid" src="assets/img/ethraa1.jpg" alt="Ethra T">
             </a>
           </div>
-          
+
           <div class="item php col-sm-6 col-md-4 col-lg-4 mb-4">
             <a onclick="show_project('elasreya')" class="item-wrap fancybox">
               <div class="work-info">
@@ -190,7 +222,7 @@
               <img class="img-fluid" src="assets/img/oalalife1.png" alt="Oala Life Store">
             </a>
           </div>
-          <div class="item php col-sm-6 col-md-4 col-lg-4 mb-4">
+          <!-- <div class="item php col-sm-6 col-md-4 col-lg-4 mb-4">
             <a onclick="show_project('farmkem')" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Farm Kem Store</h3>
@@ -198,7 +230,7 @@
               </div>
               <img class="img-fluid" src="assets/img/farm-kem1.png" alt="Farm Kem Store">
             </a>
-          </div>
+          </div> -->
           <div class="item laravel col-sm-6 col-md-4 col-lg-4 mb-4">
             <a onclick="show_project('el7l')" class="item-wrap fancybox">
               <div class="work-info">
@@ -243,9 +275,9 @@
     <section class="section skills-section">
       <div class="container">
         <h3 class="h3 heading" data-aos="fade-up">Professional Skills</h3>
-        
+
         <div class="skills-container" data-aos="fade-up" data-aos-delay="100">
-          
+
           <!-- Category 1 -->
           <div class="skills-category-card">
             <h4><i class="bi bi-cpu"></i> Core &amp; Architecture</h4>
@@ -307,7 +339,7 @@
               <span class="badge">Joomla</span>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
@@ -317,12 +349,14 @@
       <div class="container">
         <div class="resume-cta-card" data-aos="fade-up">
           <h3>Ready to Collaborate?</h3>
-          <p>Please check out my CV and contact me if you are looking for outstanding engineering solutions or backend architecture development.</p>
+          <p>Please check out my CV and contact me if you are looking for outstanding engineering solutions or backend
+            architecture development.</p>
           <div class="d-flex flex-wrap justify-content-center gap-3">
             <a target="_blank" href="assets/cv/menna-magdy---Arabic.docx" class="btn-gradient">
               <i class="bi bi-file-earmark-arrow-down-fill"></i> Download Resume
             </a>
-            <a href="mailto:mnna.magdy@gmail.com" class="btn btn-outline-light rounded-pill px-4 py-2 d-inline-flex align-items-center gap-2">
+            <a href="mailto:mnna.magdy@gmail.com"
+              class="btn btn-outline-light rounded-pill px-4 py-2 d-inline-flex align-items-center gap-2">
               <i class="bi bi-chat-dots-fill"></i> Let's Talk
             </a>
           </div>
@@ -350,7 +384,8 @@
   </footer>
 
   <!-- Fullscreen Modal -->
-  <div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
+  <div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel"
+    style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
         <div class="modal-header">
@@ -364,11 +399,13 @@
                 <div class="carousel-inner" id="carousel-items">
                   <!-- JS populated -->
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                  data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                  data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
@@ -391,7 +428,26 @@
     </div>
   </div>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Image Zoom Overlay -->
+  <div id="zoomOverlay" class="zoom-overlay" style="display: none;">
+    <button type="button" class="zoom-close-btn" aria-label="Close" id="zoomCloseBtn">
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <div class="zoom-controls-toolbar">
+      <button type="button" class="zoom-control-btn" id="zoomInBtn" title="Zoom In"><i
+          class="bi bi-plus-lg"></i></button>
+      <button type="button" class="zoom-control-btn" id="zoomOutBtn" title="Zoom Out"><i
+          class="bi bi-dash-lg"></i></button>
+      <button type="button" class="zoom-control-btn" id="zoomResetBtn" title="Reset View"><i
+          class="bi bi-arrow-counterclockwise"></i></button>
+    </div>
+    <div class="zoom-img-container" id="zoomImgContainer">
+      <img id="zoomedImage" src="" alt="Zoomed project screenshot">
+    </div>
+  </div>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -400,7 +456,8 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
